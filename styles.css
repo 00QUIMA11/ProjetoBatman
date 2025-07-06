@@ -1,0 +1,294 @@
+@import url('https://fonts.googleapis.com/css2?family=Kdam+Thmor+Pro&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    background-color: #000;
+}
+
+header {
+    height: 90px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  
+    
+}
+
+
+nav {
+    width: 60%;
+}
+
+ul {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+li {
+    list-style: none;
+    color: aliceblue;
+    cursor: pointer;
+    font-size: 19px;
+    transition: .5s;
+    font-family: 'Kdam Thmor Pro' , sans-serif;
+     
+}
+
+li:hover {
+     color: #d21617;
+}
+ 
+#logo {
+    width: 150px;
+    height: auto;
+   
+
+    
+
+}
+
+#banner{
+    background-image: url('batman-caped-crusader-001.jpg');
+    background-position:center;
+    background-size:cover;
+    min-height: 100vh;
+   
+}   
+
+
+
+header{
+    position: fixed;
+    top:0;
+    left: 0;
+    right: 0;
+    z-index: 99;
+
+    
+}
+
+
+
+#trailer-container {
+    width: 100%;
+    height: 400px;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 15px;
+    margin-left: auto;
+    margin-right: auto;
+   
+
+}   
+
+.content {
+    width: 60%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: 1px 2px 21px 1px rgba(255, 4, 4, 0.993);
+
+    
+}
+
+.trailer {
+    width: 50%;
+   
+    
+
+    
+
+}
+
+#sinopse {
+    width: 50%;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-top: 5px;
+    margin-left:5px;
+    margin-right: 5px;
+    border-radius: 15px;
+   
+   
+
+}
+
+.description {
+    color: #fff;
+    font-size: 19px;
+    font-family:'kdam Thmor Pro', sans-serif;
+    width:70%;
+
+}
+
+.button {
+    width: 200px;
+    height: 60px;
+    background-color: #d21617;
+    color: #fff;
+    box-shadow: 1px 2px 21px 1px rgba(251, 251, 252, 0.993);
+    padding: 8px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: .8s;
+    font: size 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    border: none;
+    outline: none;
+    margin-top: 25px;
+ 
+
+}
+
+.button:hover {
+    background-color: #fff;
+    color: #000;
+}
+
+.actor-cards-container {
+    width: 100%;
+    display:flex;
+    justify-content: center;
+    margin-top: 5px;
+}
+
+.cards-content {
+
+    width: 90%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    row-gap: 20px;
+    column-gap: 40px;
+}
+
+.card {
+    width: 100%;
+    height: 600px;
+    background-size:cover;
+    background-position: 50% 50%;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 1s;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding:0 0 20px 10px;
+    color:#fff;
+    font-size: 17px;
+    font-family: 'Kdam Thmor Pro', sans-serif;
+}
+
+.card:hover {
+    transform: scale(1.02);
+    box-shadow: 1px 2px 21px 1px rgba(255, 4, 4, 0.993);
+
+}
+
+.banner-1 {
+    background-image:  url('R.jpeg');
+}
+
+.banner-2 {
+    background-image: url('Batman-Caped-Crusader-Mulher-Gato-A-Geleia-720x628.jpg');
+}
+
+.banner-3 {
+    background-image: url('OIP (2).webp');
+
+}
+
+footer {
+    height:auto;
+    margin-top:auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+   
+} 
+
+span {
+    color: #fff;
+    font-family: "kdam thmor Pro",sans-serif;
+    font-size: 16px;
+}
+
+.footer-navigation {
+    display: none;
+}
+
+.footer-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+@media(max-width: 768px) {
+    .footer-navigation{
+        display: block;
+    }
+
+    nav {
+        display: none;
+    }
+    #banner {
+        background-position:center;
+
+    }
+    #trailer-container{
+        width: 100%;
+        height: 400px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .content {
+        width: 95%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .trailer {
+        width: 100%;
+
+
+    }
+
+    #sinopse {
+        width: 95%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .description {
+        width: 100%;
+    }
+
+    .button {
+        width: 100%;
+        margin-top: 30px;
+
+    }
+
+    .cards-content {
+        grid-template-columns: 1fr;
+        margin-top: 150px;
+    }
+
+
+}
+
+ 
